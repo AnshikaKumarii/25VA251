@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // js variable data types
+        //primitive data types:string number boolean null undefined symbol bigin
+        // non primitive data types: object array function
+        let name="ABES";//string 
+        console.log(name);
+        console.log(typeof(name));
+        let myname=true;//boolean
+        console.log(myname);
+        console.log(typeof(name));
+        let number=123;//number
+        console.log(number);
+        console.log(typeof(number));
+        let address=null;//null
+        console.log(address);
+        console.log(typeof(address));
+        let email;//undefined
+        console.log(email);
+        console.log(typeof(email));
+        let bigamount=BigInt(1264860137);
+        console.log(bigamount);
+        console.log(typeof(bigamount));
+         //symbol-A unique primitve identification
+        //the JS introduced a new primitive data type called symbol.symbols are unique and immutable(that cannot be changed)
+        
+
+        let val1=Symbol('hello');
+        let val2=Symbol('hello');
+        console.log(val1==val2);
+        console.log(typeof(val1));
+        //refernce or non-primitve - defined in pair i.e key and value 
+        //object {} function() and array[]
+        let myinfo={
+            name:"abhay",
+            mob:353553787,
+            ismarried: false,
+            eMail:"abhay36649@gmail.com",
+            address:null
+
+        }
+        //acces  object's key
+        console.log(myinfo);
+        console.log(myinfo.name);
+        console.log(myinfo.eMail);
+        console.log(myinfo.address);
+        //function
+        function hello(){
+            let myname="ABESEC";
+            console.log(myname);
+            console.log(typeof(hello));
+        }
+        hello();
+
+        //array
+        let students=["xyz","name1","name2","name3"];
+        console.log(students[0]);
+
+
+     
+    </script>
+</body>
+</html>
