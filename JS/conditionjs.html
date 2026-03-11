@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional statement in js</title>
+</head>
+<body>
+    <script>
+        //conditional statement:
+        //if....
+        let age=18;
+
+        if(age<18){
+        console.log("not valid age for vote casting");
+        }   
+        
+        //if else....
+
+        let myAge=12;
+        if(myAge>=18){
+            console.log("valid age for vote casting");
+
+        }else{
+            console.log("not valid age");
+        }
+        //switch case..
+        let grade='C';
+        switch(grade){
+            case 'A':result=("first division");
+            break;
+            case 'B': result=("second division");
+            break;
+            case 'C':result=("third division");
+            break;
+            default:result=("fail");
+
+        }
+        console.log(result);
+        //if elseif..else...
+        let marks=56;
+        if(marks>60){
+            console.log("first division");
+
+        }else if(marks<60 && marks>40){
+            console.log("second division");
+
+        }else{
+            console.log("third division");
+        }
+
+
+
+        </script>
+</body>
+</html>
