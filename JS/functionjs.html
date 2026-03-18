@@ -111,7 +111,42 @@
                 rejct("wait for next year");
              }
         })
-        promise.then(result=>console.log(result)).catch(error=>console.log(error));
+        promise.then(result=>console.log(result)).
+        catch(error=>console.log(error)).
+        finally(msg=>console.log("done"));
+
+     //async and await
+    //  async and await are special keywords that allow developers to write 
+    //  asynchronous code in a clean, synchronous-like style.
+
+    async function userData(){
+        try{
+        let data=await fetch ('https://dummyjson.com/products/1');
+        let updatedData=await data.json();
+        console.log(updatedData);
+        }
+        catch(error){
+            console.log("not fetched"+error);
+        }
+    }
+
+    userData();
+
+    //local storage-JavaScript localStorage is a feature that enables developers to store
+    //  key-value data pairs persistently within the user's browser, with no expiration date.
+    let userInfo={
+        name:"john",
+        age:23,
+        mob:6982092792,
+        email:"john25@gmail.com",
+
+    } 
+    localStorage.setItem('prefrences',JSON.stringify(userInfo));
+    let storagePreference=JSON.parse(localStorage.getItem('preferences'));
+    console.log(storagePreference.name);
+
+
+
     </script>
 </body>
 </html>
